@@ -1,12 +1,17 @@
 {
   "name": "mirante-teste-angular",
-  "version": "0.0.0",
+  "version": "1.0.0",
   "scripts": {
     "ng": "ng",
-    "start": "ng serve",
+    "start": "node server.js",
     "build": "ng build",
     "watch": "ng build --watch --configuration development",
-    "test": "ng test"
+    "test": "ng test",
+    "heroku-postbuild": "ng build --prod"
+  },
+  "engines": {
+    "node": "16.13.2",
+    "npm": "6.14.13"
   },
   "private": true,
   "dependencies": {
