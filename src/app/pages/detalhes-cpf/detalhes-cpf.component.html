@@ -1,0 +1,53 @@
+<div class="card-situacao-cadastral">
+<mat-card class="cards">
+    <mat-card-title class="title">
+        Situação cadastral do CPF
+    </mat-card-title>
+    <mat-card-subtitle class="subtitle">
+        Consulta na Receita Federal
+    </mat-card-subtitle>
+        <div class="first-group">
+            <mat-icon>person</mat-icon>
+            <label class="label-name">Nome</label>
+            <span class="first-group-data">{{cpfFinded.getName()}}</span>
+        </div>
+        <div class="second-group">
+            <mat-icon style="color: green;">expand_circle_down</mat-icon>
+            <label class="label-name-second-group">Situação do CPF</label>
+            <span class="second-group-data"> {{cpfFinded.getSituation()}}</span>
+        </div>
+</mat-card>
+
+<mat-card class="cards">
+    <mat-card-title class="title">
+     Conta Aplicação
+    </mat-card-title>
+    <mat-card-subtitle class="subtitle">
+        Coperativa Viacredi
+    </mat-card-subtitle>
+    <div class="first-group">
+        <mat-icon>credit_card</mat-icon>
+    <label class="label-name">Número da conta</label>
+    <span class="first-group-data">{{cpfFinded.getContaAplicacao()?.getAccountnumber()}}</span>
+    </div>
+    <button mat-button class="button-duplicar">Duplicar conta</button>
+   
+</mat-card>
+
+<mat-card class="cards">
+    <mat-card-title class="title">
+      Conta Corrente
+    </mat-card-title>
+    <mat-card-subtitle class="subtitle">
+        Coperativa Viacredi
+    </mat-card-subtitle>
+    <div class="first-group">
+        <mat-icon>credit_card</mat-icon>
+    <label class="label-name">Número da conta</label>
+    <span class="first-group-data">{{cpfFinded.getContaCorrente()?.getAccountnumber()}}</span>
+    </div>
+    <button mat-button class="button-duplicar">Duplicar conta</button>
+
+</mat-card>
+
+</div>

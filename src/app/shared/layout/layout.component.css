@@ -1,0 +1,79 @@
+
+.layout {
+    width: 100%;
+  }
+  
+.layout-sidebar {
+    background-color: #165C7D;
+    height:calc(100vh);
+    width: 100px;
+    @media (max-width: $small) {
+      width: 218px;
+    }
+}
+  
+.layout-content {
+    background-color: #E7EEF1;
+    height:calc(100vh);
+  
+    @media (max-width: $small) {
+      width: 100%;
+    }
+}
+
+.icon {
+    margin-top: 19px;
+    margin-left: 20px;
+    width: 60px;
+    height: 60px;
+}
+
+.icon-menu { 
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    left: 40px;
+    top: 115px;
+    color: #739DB1;
+}
+
+.icon-search {
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    left: 40px;
+    top: 175px;
+    color: #FFFFFF;
+}
+
+.icon-star { 
+    position: absolute;
+    width: 30.35px;
+    height: 30px;
+    top: 229px;
+    left: 35px;
+}
+
+.icon-chat {
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    left: 35px;
+    top: 288px;
+}
+
+.icon-categories {
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    left: 35px;
+    top: 349px;
+}
+
+.icon-central {
+    position: absolute;
+    width: 30.13px;
+    height: 30px;
+    left: 35px;
+    top: 412px;
+}

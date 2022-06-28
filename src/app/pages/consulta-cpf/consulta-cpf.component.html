@@ -1,0 +1,19 @@
+<app-layout>
+    <label class="title"> Informe o CPF do futuro cooperado (a)</label>
+    <label class="subtitle">Se necessário, você poderá duplicar uma conta existente ou pausar e retomar este cadastro futuramente. Digite apenas os números (sem pontos ou traços).</label>
+
+    <label class="label-cpf">CPF</label>
+    <form [formGroup]="formCpf" (ngSubmit)="onSubmit()">
+    <input matInput type="text" placeholder="000.000.000-00" class="input-cpf" formControlName="cpf" mask="000.000.000-00">
+    <div class="input-cpf-errors" *ngIf="!cpf?.pristine && cpf?.errors">
+        <p *ngIf="cpf?.errors?.required">
+          CPF é obrigatório.
+        </p>
+        <p *ngIf="cpf?.errors?.cpfInvalido">
+          Digite um CPF válido
+        </p>
+      </div>
+    <button [disabled]="!formCpf.valid" class="btn btn-primary" type="submit">Consultar por CPF</button>
+    </form>
+    <router-outlet></router-outlet>
+</app-layout>

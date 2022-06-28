@@ -1,0 +1,78 @@
+
+.navbar-brand{
+    font-size:24px; 
+    color: #101213;
+    font-family: Exo2-Bold;
+    font-weight: 700;
+}
+
+.subtitle{
+    font-size:12px; 
+    color: #787878;
+    font-family: "Open-Sans-Normal";
+    font-weight: 400;
+}
+
+.icon-notifications{
+    position: absolute;
+    width: 24px;
+    height: 20px;
+    right: 200px;
+    top: calc(50% - 20px/2 - 0.11px);
+    color: #125D79;
+}
+
+.elipse{
+    position: absolute;
+    width: 12px;
+    height: 12px;
+    right: 198px;
+    top: calc(38%);
+    background: #FF0000;
+}
+
+.numero{
+    position: absolute;
+    width: 6px;
+    height: 14px;
+    right: 200px;
+    top: calc(37%);
+    font-family: "Open-Sans-Normal";
+    font-weight: 700;
+    font-size: 10px;
+    line-height: 14px;
+    color: #FFFFFF;      
+}
+
+.btn{
+    box-sizing: border-box;
+    position: absolute;
+    width: 109px;
+    height: 36px;
+    right: 76px;
+    top: calc(50% - 32px/2 - 0.5px);
+    background: #FFFFFF;
+    border: 1px solid #125D79;
+    border-radius: 15px;
+    color: #125D79;
+}
+
+.icon-user-logged{
+    position: absolute;
+    width: 40.71px;
+    height: 42px;
+    right: 20.36px;
+    top: calc(50% - 42px/2 - 0.5px);
+    border-radius: 200px;
+    border: solid 1px;
+    border-color: #125D79;
+}
+
+.vector-config {
+    position: absolute;
+    width: 10px;
+    height: 10px;
+    right: 30px;
+    top: calc(50% - 15px/2 + 15px);
+    color: #165C7D;
+}
