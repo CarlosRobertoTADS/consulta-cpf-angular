@@ -34,12 +34,14 @@ export class DetalhesCpfComponent implements OnInit {
       this.contaCorrente.setAccountnumber(cpfFinded!.contaCorrente.accountNumber);
       this.cpfFinded.setContaAplicacao(this.contaAplicacao);
       this.cpfFinded.setContaCorrente(this.contaCorrente)
-      console.log(this.cpfFinded)
+      
     } else {
       alert('Tente outro CPF');
       this.router.navigate(['consulta']);
     }
-    
+    cpfFinded == undefined;
   }
+
+
 
 }

@@ -14,9 +14,10 @@
 .subtitle{
     position: absolute;
     height: 30px;
-    left: 2.77%;
-    right: 47.89%;
-    top: calc(34%);
+    left: 40px;
+    right: 42px;
+    width: 550px;
+    top: 240px;
     font-family: 'Open-Sans-Normal';
     font-weight: 400;
     font-size: 11px;
@@ -84,6 +85,6 @@
     width: 270px;
     height: 34px;
     left: 40px;
-    top: 355px;
+    top: 340px;
     color: red;
 }

@@ -4,12 +4,15 @@
 
     <label class="label-cpf">CPF</label>
     <form [formGroup]="formCpf" (ngSubmit)="onSubmit()">
-    <input matInput type="text" placeholder="000.000.000-00" class="input-cpf" formControlName="cpf" mask="000.000.000-00">
+    <input matInput mask="000.000.000-00" type="text" placeholder="000.000.000-00" class="input-cpf" formControlName="cpf" mask="000.000.000-00">
     <div class="input-cpf-errors" *ngIf="!cpf?.pristine && cpf?.errors">
         <p *ngIf="cpf?.errors?.required">
           CPF é obrigatório.
         </p>
         <p *ngIf="cpf?.errors?.cpfInvalido">
+          Digite um CPF válido
+        </p>
+        <p *ngIf="!cpf?.valid">
           Digite um CPF válido
         </p>
       </div>

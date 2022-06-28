@@ -22,16 +22,20 @@ export class ConsultaCpfComponent implements OnInit {
 
   ngOnInit(): void {
     this.formCpf = this.formBuilder.group({
-      cpf: [
+      cpf:[
         '',
-          Validators.compose([Validators.required, CommonValidator.ValidaCpf])
+          Validators.compose([Validators.maxLength(11), Validators.required, CommonValidator.ValidaCpf])
       ]
     })
   }
 
   onSubmit() {
-    const valueInputed = +this.formCpf.get('cpf')?.value;
+    let valueInputed = this.formCpf.get('cpf')?.value;
+    if (valueInputed.toString().length == 10) {
+      valueInputed = '0' + valueInputed; 
+    }
     this.router.navigate(['consulta/detalhes', valueInputed]);
+
   }
 
   get cpf() {
