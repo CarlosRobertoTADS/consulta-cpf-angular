@@ -1,4 +1,5 @@
 <app-layout>
+  <app-header [title]="titleDesc" [subtitle]="subTitleDesc"></app-header>
     <label class="title"> Informe o CPF do futuro cooperado (a)</label>
     <label class="subtitle">Se necessário, você poderá duplicar uma conta existente ou pausar e retomar este cadastro futuramente. Digite apenas os números (sem pontos ou traços).</label>
 
@@ -19,4 +20,5 @@
     <button [disabled]="!formCpf.valid" class="btn btn-primary" type="submit">Consultar por CPF</button>
     </form>
     <router-outlet></router-outlet>
+  <app-footer [firstButton]="flagButton"></app-footer>
 </app-layout>

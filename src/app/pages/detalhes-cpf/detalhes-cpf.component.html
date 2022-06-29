@@ -1,4 +1,4 @@
-<div class="card-situacao-cadastral">
+<div class="card-situacao-cadastral">  
 <mat-card class="cards">
     <mat-card-title class="title">
         Situação cadastral do CPF
@@ -9,12 +9,12 @@
         <div class="first-group">
             <mat-icon>person</mat-icon>
             <label class="label-name">Nome</label>
-            <span class="first-group-data">{{cpfFinded.getName()}}</span>
+            <span class="first-group-data">{{dataCpf?.getName()}}</span>
         </div>
         <div class="second-group">
             <mat-icon style="color: green;">expand_circle_down</mat-icon>
             <label class="label-name-second-group">Situação do CPF</label>
-            <span class="second-group-data"> {{cpfFinded.getSituation()}}</span>
+            <span class="second-group-data"> {{dataCpf?.getSituation()}}</span>
         </div>
 </mat-card>
 
@@ -28,7 +28,7 @@
     <div class="first-group">
         <mat-icon>credit_card</mat-icon>
     <label class="label-name">Número da conta</label>
-    <span class="first-group-data">{{cpfFinded.getContaAplicacao()?.getAccountnumber()}}</span>
+    <span class="first-group-data">{{dataCpf?.getContaAplicacao()?.getAccountnumber()}}</span>
     </div>
     <button mat-button class="button-duplicar">Duplicar conta</button>
    
@@ -44,10 +44,8 @@
     <div class="first-group">
         <mat-icon>credit_card</mat-icon>
     <label class="label-name">Número da conta</label>
-    <span class="first-group-data">{{cpfFinded.getContaCorrente()?.getAccountnumber()}}</span>
+    <span class="first-group-data">{{dataCpf?.getContaCorrente()?.getAccountnumber()}}</span>
     </div>
     <button mat-button class="button-duplicar">Duplicar conta</button>
-
 </mat-card>
-
 </div>

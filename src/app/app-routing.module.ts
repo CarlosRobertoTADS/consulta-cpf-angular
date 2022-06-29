@@ -11,7 +11,7 @@ const routes: Routes = [
     path: 'consulta',
     component: ConsultaCpfComponent,
     children: [
-      {path: 'detalhes/:cpf', component: DetalhesCpfComponent}
+      {path: 'detalhes', component: DetalhesCpfComponent}
     ]
     
   }

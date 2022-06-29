@@ -15,7 +15,11 @@ import {MatInputModule} from '@angular/material/input';
 import { ReactiveFormsModule } from '@angular/forms';
 import { MatCardModule } from '@angular/material/card';
 import {MatButtonModule} from '@angular/material/button';
-import { NgxMaskModule, IConfig } from 'ngx-mask'
+import { NgxMaskModule, IConfig } from 'ngx-mask';
+import { FooterComponent } from './shared/components/footer/footer.component'
+import {MatDialogModule, MAT_DIALOG_DEFAULT_OPTIONS} from '@angular/material/dialog';
+import { DialogSimpleComponent } from './shared/components/dialog-simple/dialog-simple.component';
+import {MatProgressSpinnerModule} from '@angular/material/progress-spinner';
 
 export let options: Partial<IConfig> | (() => Partial<IConfig>);
 
@@ -25,7 +29,9 @@ export let options: Partial<IConfig> | (() => Partial<IConfig>);
     ConsultaCpfComponent,
     DetalhesCpfComponent,
     LayoutComponent,
-    HeaderComponent
+    HeaderComponent,
+    FooterComponent,
+    DialogSimpleComponent
   ],
   imports: [
     BrowserModule,
@@ -38,9 +44,13 @@ export let options: Partial<IConfig> | (() => Partial<IConfig>);
     ReactiveFormsModule,
     MatCardModule,
     MatButtonModule,
-    NgxMaskModule.forRoot()
+    NgxMaskModule.forRoot(),
+    MatDialogModule,
+    MatProgressSpinnerModule
   ],
-  providers: [],
+  providers: [
+    {provide: MAT_DIALOG_DEFAULT_OPTIONS, useValue: {hasBackdrop: false}}
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
