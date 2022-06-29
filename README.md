@@ -2,7 +2,7 @@
 
 Access now in: https://mirante-tests.herokuapp.com/
 
-##How to Test
+## How to Test
 
 Input this cpf's valid: 11122233344, 22222233355, 15432165356.
 

@@ -65,6 +65,7 @@ export class ConsultaCpfComponent implements OnInit, AfterViewInit {
       this.cpfService.setDataCpf(this.cpfFinded);
       this.router.navigate(['consulta/detalhes']);
     } else {
+      this.flagButton = false;
       this.openDialog();
       this.router.navigate(['consulta']);
     }
